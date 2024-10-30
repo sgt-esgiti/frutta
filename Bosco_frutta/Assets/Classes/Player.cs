@@ -1,15 +1,29 @@
 public class Player {
     // CONSTRUCTORS
-    private int movement_speed;
-    private int game_points;
-    private int total_points;
-    private int points_multiplier;
+    public Player() {
+        MovementSpeed = 1;
+        GamePoints = 0;
+        TotalPoints = 0;
+        PointsMultiplier = 1;
+    }
+    public Player(float points) {
+        MovementSpeed = 1;
+        GamePoints = 0;
+        TotalPoints = points;
+        PointsMultiplier = 1;
+    }
 
-    public int MovementSpeed {
+    // VARIABLES
+    private float movement_speed;
+    private float game_points;
+    private float total_points;
+    private float points_multiplier;
+
+    public float MovementSpeed {
         get {return speed;}
         set {
-            int min_speed = 1;
-            int max_speed = 7;
+            float min_speed = 1;
+            float max_speed = 7;
     
             if (value < min_speed)
                 movement_speed = min_speed;
@@ -20,7 +34,7 @@ public class Player {
         }
     }
 
-    public int GamePoints {
+    public float GamePoints {
         get {return game_points;}
         set {
             if (value < 0)
@@ -30,7 +44,7 @@ public class Player {
         }
     }
 
-    public int TotalPoints {
+    public float TotalPoints {
         get {return total_points;}
         set {
             if (value < 0)
@@ -40,7 +54,7 @@ public class Player {
         }
     }
 
-    public int PointsMultiplier {
+    public float PointsMultiplier {
         get {return points_multiplier;}
         set {
             if (value < 1)
