@@ -7,7 +7,7 @@ public class GameSingleton:MonoBehaviour {
     public Player player;
     public float SpawnRateSeconds;
 
-    void Start () {
+    void Awake () {
         if (instance == null) {
             instance = this;
             DontDestroyOnLoad(gameObject);

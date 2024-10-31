@@ -78,7 +78,11 @@ public class Player
     // METHODS
    
     //metodo per aggiungere punti alla fine di una partita di gioco
-    public void AddPoints() {
+    public void AddPointsFinal() {
         TotalPoints += GamePoints;
+    }
+
+    public void AddGamePoints(float value){
+        GamePoints += value * PointsMultiplier;
     }
 }
