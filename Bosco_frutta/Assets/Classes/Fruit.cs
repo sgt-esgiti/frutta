@@ -1,12 +1,21 @@
 public class Fruit {
     // CONSTRUCTOR
-    Fruit() {}
+    public Fruit() {}
 
     // VARIABLES
     private float points;
 
     public float Points {
         get {return points;}
-        set {points = value;}
+        set {
+            if (value < 1)
+            {
+                points = 1;
+            }
+            else
+            {
+                points = value;
+            }
+        }
     }
 }

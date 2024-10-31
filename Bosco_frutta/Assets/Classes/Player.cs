@@ -1,12 +1,15 @@
-public class Player {
+public class Player
+{
     // CONSTRUCTORS
-    public Player() {
+    public Player()
+    {
         MovementSpeed = 1;
         GamePoints = 0;
         TotalPoints = 0;
         PointsMultiplier = 1;
     }
-    public Player(float points) {
+    public Player(float points)
+    {
         MovementSpeed = 1;
         GamePoints = 0;
         TotalPoints = points;
@@ -19,12 +22,14 @@ public class Player {
     private float total_points;
     private float points_multiplier;
 
-    public float MovementSpeed {
-        get {return speed;}
-        set {
+    public float MovementSpeed
+    {
+        get { return movement_speed; }
+        set
+        {
             float min_speed = 1;
             float max_speed = 7;
-    
+
             if (value < min_speed)
                 movement_speed = min_speed;
             else if (value > max_speed)
@@ -34,9 +39,11 @@ public class Player {
         }
     }
 
-    public float GamePoints {
-        get {return game_points;}
-        set {
+    public float GamePoints
+    {
+        get { return game_points; }
+        set
+        {
             if (value < 0)
                 game_points = 0;
             else
@@ -44,9 +51,11 @@ public class Player {
         }
     }
 
-    public float TotalPoints {
-        get {return total_points;}
-        set {
+    public float TotalPoints
+    {
+        get { return total_points; }
+        set
+        {
             if (value < 0)
                 total_points = 0;
             else
@@ -54,9 +63,11 @@ public class Player {
         }
     }
 
-    public float PointsMultiplier {
-        get {return points_multiplier;}
-        set {
+    public float PointsMultiplier
+    {
+        get { return points_multiplier; }
+        set
+        {
             if (value < 1)
                 points_multiplier = 1;
             else
@@ -65,6 +76,8 @@ public class Player {
     }
 
     // METHODS
+   
+    //metodo per aggiungere punti alla fine di una partita di gioco
     public void AddPoints() {
         TotalPoints += GamePoints;
     }
