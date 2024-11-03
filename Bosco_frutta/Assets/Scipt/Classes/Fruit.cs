@@ -1,6 +1,8 @@
 public class Fruit {
     // CONSTRUCTOR
-    public Fruit() {}
+    public Fruit(float p) {
+        Points = p;
+    }
 
     // VARIABLES
     private float points;

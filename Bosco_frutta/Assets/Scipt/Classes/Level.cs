@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 
 public class Level
 {
-    public Level(){}
+    public Level(int c, float v){
+        Cost = c;
+        Value = v;
+    }
 
     private int cost;
     public int Cost
