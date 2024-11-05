@@ -23,6 +23,10 @@ public class ObjectPool : MonoBehaviour
         {
             instance = this;
         }
+        
+    }
+
+    void Start(){
         GameObject tmp;
 
         int amountToPool = 20;
@@ -83,5 +87,4 @@ public class ObjectPool : MonoBehaviour
         }
 
     }
-
 }

@@ -11,7 +11,7 @@ public class FruitScript : MonoBehaviour
     void Start(){
         playerInst = GameSingleton.instance.player;
     }
-
+    
 
     public void AddPoints(){
         playerInst.AddGamePoints(fruit.Points);

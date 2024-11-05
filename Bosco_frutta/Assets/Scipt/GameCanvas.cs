@@ -41,9 +41,10 @@ public class GameCanvas : MonoBehaviour
             else {
                 TimeLeft = 0;
                 TimerOn = false;
+                
                 //cambia scena e aggiorna punti totali player
                 playerInst.AddPointsFinal();
-                //SceneManager.LoadScene("Scena Stanza")
+                SceneManager.LoadScene("Stanza");
             }
         }
     }

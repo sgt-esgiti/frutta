@@ -24,7 +24,7 @@ public class UpgradeCanvas : MonoBehaviour
     
     //creation of Speed, MolScore and SpawnRate array of levels
     private Level[] speedLevels = {
-        new Level(0,1),
+        new Level(0,1.5f),
         new Level(25,2),
         new Level(100,3),
         new Level(250,4),
@@ -63,9 +63,9 @@ public class UpgradeCanvas : MonoBehaviour
         buttonMol.SetActive(true);
         buttonSpawn.SetActive(true);
 
-        Speed = new Upgrade(1,speedLevels);
-        MolScore = new Upgrade(1,molScoreLevels);
-        SpawnRate = new Upgrade(1,spawnRateLevels);
+        Speed = new Upgrade(speedLevels);
+        MolScore = new Upgrade(molScoreLevels);
+        SpawnRate = new Upgrade(spawnRateLevels);
 
         //change text when game start
         ChangeSpeTexts();
