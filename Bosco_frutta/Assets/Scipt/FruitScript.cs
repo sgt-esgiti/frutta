@@ -5,8 +5,10 @@ using UnityEngine;
 
 public class FruitScript : MonoBehaviour
 {
+    public int posSpawn=0;
     public Fruit fruit;
     private Player playerInst;
+    
 
     void Start(){
         playerInst = GameSingleton.instance.player;

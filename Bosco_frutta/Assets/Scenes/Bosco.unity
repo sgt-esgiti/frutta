@@ -5673,6 +5673,52 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 667b5a9e049a14242ab66dcd62d18342, type: 3}
+--- !u!1 &1370262336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1370262338}
+  - component: {fileID: 1370262337}
+  m_Layer: 0
+  m_Name: SpawnList
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1370262337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370262336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba2b93276085bd24f80c41622099a949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listSpawnPoints: []
+  jsonFileName: spawnPoints.json
+--- !u!4 &1370262338
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370262336}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1373580724 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7400655631211887255, guid: a6105fc98b9ec774fa5c18a2b9b071de, type: 3}
@@ -7804,7 +7850,7 @@ Transform:
   m_GameObject: {fileID: 1900077866}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 141.35587, y: 35.613667, z: 102.36288}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7839,6 +7885,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c1a9dce63b96dc4e84478e0decde324, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpawnList: {fileID: 1370262336}
+  FruitList: {fileID: 1900077866}
 --- !u!4 &1904742567
 Transform:
   m_ObjectHideFlags: 0
@@ -8818,8 +8866,9 @@ SceneRoots:
   - {fileID: 224143983}
   - {fileID: 271324524}
   - {fileID: 376861673}
-  - {fileID: 1900077868}
   - {fileID: 1904742567}
   - {fileID: 807458514}
   - {fileID: 1921827110}
   - {fileID: 9222019404541209626}
+  - {fileID: 1370262338}
+  - {fileID: 1900077868}
