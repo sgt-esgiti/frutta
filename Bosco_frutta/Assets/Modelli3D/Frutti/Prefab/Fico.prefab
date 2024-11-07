@@ -99,7 +99,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4243a81d0eed02419e9e10fea22ef8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  posSpawn: 0
 --- !u!135 &7968702071557000436
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -199,7 +198,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8868456528256113573}
+      - m_Target: {fileID: 6895337394118147462, guid: 21509fd2dacf63642a0590b1e0c7ed1b, type: 3}
         m_TargetAssemblyTypeName: FruitScript, Assembly-CSharp
         m_MethodName: AddPoints
         m_Mode: 1

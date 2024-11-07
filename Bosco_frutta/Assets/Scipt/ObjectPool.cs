@@ -34,7 +34,7 @@ public class ObjectPool : MonoBehaviour
         for (int i=0; i < amountToPool; i++){
             tmp = Instantiate(ApplePrefab, new Vector3(10000,0,10000), new Quaternion(-90,0,0,0));
             //set points
-            tmp.GetComponent<FruitScript>().fruit = new Fruit(4f);
+            tmp.GetComponent<FruitScript>().fruit = new Fruit(4);
             tmp.SetActive(false);
             listfruits.Add(tmp);
         }
@@ -43,7 +43,7 @@ public class ObjectPool : MonoBehaviour
         for (int i=0; i<amountToPool; i++){
             tmp = Instantiate(PearPrefab, new Vector3(10000,0,10000), new Quaternion(-90,0,0,0));
             //set points
-            tmp.GetComponent<FruitScript>().fruit = new Fruit(5f);
+            tmp.GetComponent<FruitScript>().fruit = new Fruit(5);
             tmp.SetActive(false);
             listfruits.Add(tmp);
         }
@@ -53,7 +53,7 @@ public class ObjectPool : MonoBehaviour
         for (int i=0; i<amountToPool; i++){
             tmp = Instantiate(OrangePrefab, new Vector3(10000,0,10000), new Quaternion(-90,0,0,0));
             //set points
-            tmp.GetComponent<FruitScript>().fruit = new Fruit(7f);
+            tmp.GetComponent<FruitScript>().fruit = new Fruit(7);
             tmp.SetActive(false);
             listfruits.Add(tmp);
         }
@@ -62,7 +62,7 @@ public class ObjectPool : MonoBehaviour
         for (int i=0; i<amountToPool; i++){
             tmp = Instantiate(khakiPrefab, new Vector3(10000,0,10000), new Quaternion(-90,0,0,0));
             //set points
-            tmp.GetComponent<FruitScript>().fruit = new Fruit(9f);
+            tmp.GetComponent<FruitScript>().fruit = new Fruit(9);
             tmp.SetActive(false);
             listfruits.Add(tmp);
         }
@@ -72,7 +72,7 @@ public class ObjectPool : MonoBehaviour
         for (int i=0; i<amountToPool; i++){
             tmp = Instantiate(FigPrefab, new Vector3(10000,0,10000), new Quaternion(-90,0,0,0));
             //set points
-            tmp.GetComponent<FruitScript>().fruit = new Fruit(11f);
+            tmp.GetComponent<FruitScript>().fruit = new Fruit(11);
             tmp.SetActive(false);
             listfruits.Add(tmp);
         }
@@ -81,7 +81,7 @@ public class ObjectPool : MonoBehaviour
         for (int i=0; i<amountToPool; i++){
             tmp = Instantiate(PomegranatePrefab, new Vector3(10000,0,10000), new Quaternion(-90,0,0,0));
             //set points
-            tmp.GetComponent<FruitScript>().fruit = new Fruit(19f);
+            tmp.GetComponent<FruitScript>().fruit = new Fruit(19);
             tmp.SetActive(false);
             listfruits.Add(tmp);
         }
