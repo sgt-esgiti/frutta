@@ -15,7 +15,7 @@ public class SpawnerFruits : MonoBehaviour
 
     void Start(){
         spawnRate = GameSingleton.instance.SpawnRateSeconds;
-        spawnPoints = SpawnList.GetComponent<SpawnGameObject>().listSpawnPoints; // copy of spawn point list
+        spawnPoints = GameSingleton.instance.listSpawnPoints; // copy of spawn point list
         listFruits = FruitList.GetComponent<ObjectPool>().listfruits; // copy of fruits list
         spawn = false;
         //spawn 15 frutti

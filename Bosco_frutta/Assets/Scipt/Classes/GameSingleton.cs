@@ -6,6 +6,7 @@ public class GameSingleton:MonoBehaviour {
     public static GameSingleton instance;
     public Player player;
     public float SpawnRateSeconds;
+    public List<GameObject> listSpawnPoints;
 
     void Awake () {
         if (instance == null) {
@@ -18,5 +19,6 @@ public class GameSingleton:MonoBehaviour {
 
         player = new Player();
         SpawnRateSeconds = 0;
+        listSpawnPoints = new List<GameObject>();
     }
 }

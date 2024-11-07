@@ -22,6 +22,8 @@ public class FruitScript : MonoBehaviour
         gameObject.SetActive(false);
         gameObject.transform.position = new Vector3 (10000,0,10000);
         gameObject.transform.rotation = new Quaternion (-90,0,0,0);
+        GameSingleton.instance.listSpawnPoints[posSpawn].SetActive(false);
+        posSpawn = 0;
     }
 
 }

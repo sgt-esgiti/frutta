@@ -4,7 +4,7 @@ using System.IO;
 
 public class SpawnGameObject : MonoBehaviour
 {
-    public List<GameObject> listSpawnPoints = new List<GameObject>();
+    
 
     // Nome del file JSON da caricare
     public string jsonFileName = "spawnPoints.json";
@@ -12,6 +12,8 @@ public class SpawnGameObject : MonoBehaviour
     void Start()
     {
         LoadGameObjectsFromJson();
+
+
     }
 
     void LoadGameObjectsFromJson()
@@ -34,7 +36,7 @@ public class SpawnGameObject : MonoBehaviour
                     GameObject newGameObject = new GameObject("SpawnPoint");  
                     newGameObject.transform.position = new Vector3(spawnPoint.x, spawnPoint.y, spawnPoint.z); 
                     newGameObject.SetActive(false);
-                    listSpawnPoints.Add(newGameObject);
+                    GameSingleton.instance.listSpawnPoints.Add(newGameObject);
                 }
             }
             else
