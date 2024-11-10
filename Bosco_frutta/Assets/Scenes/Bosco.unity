@@ -8621,9 +8621,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UISceneTransition, Assembly-CSharp
-        m_MethodName: UI_Start
+      - m_Target: {fileID: 171754185}
+        m_TargetAssemblyTypeName: UI_PauseTransitions, Assembly-CSharp
+        m_MethodName: UI_resume
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

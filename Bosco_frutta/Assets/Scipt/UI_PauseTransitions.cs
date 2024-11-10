@@ -31,9 +31,9 @@ public class UI_PauseTransitions : MonoBehaviour
     void Update(){
         
         if(showButton.action.WasPressedThisFrame()){
-            Debug.Log("Bottone premuto");
             if(!Pause){
                 PauseCanvas.SetActive(true);
+                MainMenu.SetActive(true);
                 PauseCanvas.transform.position = head.position + new Vector3 (head.forward.x, 0, head.forward.z).normalized * spawnDistance;
                 // Time.timeScale = 0; disattiva il movimento giocatore e ferma il tempo
                 Time.timeScale = 0;
@@ -44,7 +44,8 @@ public class UI_PauseTransitions : MonoBehaviour
     }
 
     public void UI_resume(){
-        PauseCanvas.SetActive(false);
+        MainMenu.SetActive(false);
+        PauseCanvas.SetActive(false);        
         // Time.timeScale = 1; riattiva movimento e tempo;
         Time.timeScale = 1;
         Pause = false;
