@@ -10,13 +10,17 @@ public class UISceneTransition : MonoBehaviour
 
     // nome del parent che contiene tutte le info del menu (testi, pulsanti, ecc...)
     // nell'inspector unity assegni oggetto null genitore menu
-    public GameObject menu; 
-    public GameObject Credits;
+    public GameObject Menu; 
+    public GameObject Crediti;
+    public GameObject Opzioni;
+    public GameObject GameEsc;
 
     public void Start(){
         //fa vedere il menu con tutti i suoi figli e nasconde la schermata dei crediti
-        menu.SetActive(true);
-        Credits.SetActive(false);
+        Menu.SetActive(true);
+        Crediti.SetActive(false);
+        Opzioni.SetActive(false);
+        GameEsc.SetActive(false);
     }
 
     //public void nomeMetodo() -> andrà poi assegnato al pulsante di riferimento
@@ -26,13 +30,25 @@ public class UISceneTransition : MonoBehaviour
     }
 
     public void UI_Credits(){
-        menu.SetActive(false);
-        Credits.SetActive(true);
+        Menu.SetActive(false);
+        Crediti.SetActive(true);
+    }
+
+    public void UI_Options(){
+        Menu.SetActive(false);
+        Opzioni.SetActive(true);
+    }
+
+    public void UI_GameEsc(){
+        Menu.SetActive(false);
+        GameEsc.SetActive(true);
     }
 
     public void UI_Back(){
-        menu.SetActive(true);
-        Credits.SetActive(false);
+        Menu.SetActive(true);
+        Crediti.SetActive(false);
+        Opzioni.SetActive(false);
+        GameEsc.SetActive(false);
     }
 
     public void UI_Quit(){
@@ -40,8 +56,10 @@ public class UISceneTransition : MonoBehaviour
     }
 
     public void HideAll(){
-        menu.SetActive(false);
-        Credits.SetActive(false);
+        Menu.SetActive(false);
+        Crediti.SetActive(false);
+        Opzioni.SetActive(false);
+        GameEsc.SetActive(false);
     }
     
 }
