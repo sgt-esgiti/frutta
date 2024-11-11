@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5827026414585316920}
   - component: {fileID: 6294968991461430396}
   - component: {fileID: 8156394169343074455}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Caco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
