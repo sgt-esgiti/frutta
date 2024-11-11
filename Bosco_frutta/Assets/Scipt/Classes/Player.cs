@@ -5,7 +5,7 @@ public class Player
     {
         MovementSpeed = 1;
         GamePoints = 0;
-        TotalPoints = 10000;
+        TotalPoints = 0;
         PointsMultiplier = 1;
     }
     public Player(float points)
