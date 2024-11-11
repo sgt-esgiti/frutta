@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4211552134155895225}
   - component: {fileID: 3613964040949356740}
   - component: {fileID: 944772794649749439}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Pera
   m_TagString: Untagged
   m_Icon: {fileID: 0}

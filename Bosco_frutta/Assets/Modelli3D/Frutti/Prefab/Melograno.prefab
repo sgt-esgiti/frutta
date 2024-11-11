@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7988618023307929916}
   - component: {fileID: 4590603285099196721}
   - component: {fileID: 4817468192514250862}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Melograno
   m_TagString: Untagged
   m_Icon: {fileID: 0}

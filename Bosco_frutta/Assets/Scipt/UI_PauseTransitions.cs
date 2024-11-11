@@ -80,6 +80,7 @@ public class UI_PauseTransitions : MonoBehaviour
 
     public void UI_ReturnMenu(){
         HideAll();
+        Time.timeScale = 1;
         SceneManager.LoadScene("Stanza");
     }
 

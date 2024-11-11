@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3588301878239726359}
   - component: {fileID: 2328585367009649204}
   - component: {fileID: 2378924931877806824}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Mela
   m_TagString: Untagged
   m_Icon: {fileID: 0}
