@@ -67,6 +67,21 @@ public class UpgradeCanvas : MonoBehaviour
         MolScore = new Upgrade(molScoreLevels);
         SpawnRate = new Upgrade(spawnRateLevels);
 
+        if(PlayerPrefs.HasKey("Speed")){
+            //load
+            Speed.Lv = PlayerPrefs.GetInt("Speed");
+            MolScore.Lv = PlayerPrefs.GetInt("MolScore");
+            SpawnRate.Lv = PlayerPrefs.GetInt("SpawnRate");
+            playerInst.TotalPoints = PlayerPrefs.GetFloat("TotPoints");
+        }
+        else {
+            //set and create
+            PlayerPrefs.SetInt("Speed", 0);
+            PlayerPrefs.SetInt("MolScore", 0);
+            PlayerPrefs.SetInt("SpawnRate", 0);
+            PlayerPrefs.SetFloat("TotPoints", 0);
+        }
+
         //change text when game start
         ChangeSpeTexts();
         ChangeMolTexts();
@@ -124,6 +139,7 @@ public class UpgradeCanvas : MonoBehaviour
             txtTotPoints.text = playerInst.TotalPoints.ToString("0");
             Speed.Lv++;
             playerInst.MovementSpeed = Speed.livello[Speed.Lv].Value;
+            PlayerPrefs.SetInt("Speed", Speed.Lv);
             ChangeSpeTexts();
         }
     }
@@ -133,6 +149,7 @@ public class UpgradeCanvas : MonoBehaviour
             txtTotPoints.text = playerInst.TotalPoints.ToString("0");
             MolScore.Lv++;
             playerInst.PointsMultiplier = MolScore.livello[MolScore.Lv].Value;
+            PlayerPrefs.SetInt("MolScore", MolScore.Lv);
             ChangeMolTexts();
         }
     }
@@ -142,6 +159,7 @@ public class UpgradeCanvas : MonoBehaviour
             txtTotPoints.text = playerInst.TotalPoints.ToString("0");
             SpawnRate.Lv++;
             GameSingleton.instance.SpawnRateSeconds = SpawnRate.livello[SpawnRate.Lv].Value;
+            PlayerPrefs.SetInt("SpawnRate", SpawnRate.Lv);
             ChangeSpawnTexts();
         }
     }

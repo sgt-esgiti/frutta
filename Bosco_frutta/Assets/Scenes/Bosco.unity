@@ -5702,7 +5702,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba2b93276085bd24f80c41622099a949, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listSpawnPoints: []
   jsonFileName: spawnPoints.json
 --- !u!4 &1370262338
 Transform:
