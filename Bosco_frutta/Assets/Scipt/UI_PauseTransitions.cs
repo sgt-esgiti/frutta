@@ -9,7 +9,6 @@ public class UI_PauseTransitions : MonoBehaviour
     public GameObject MainMenu;
     public GameObject Opzioni;
     public GameObject Menu;
-    public GameObject PauseCanvas;
 
     //far spawnare canvas quando premi trigger button mano sx
     public InputActionProperty showButton;
@@ -23,18 +22,30 @@ public class UI_PauseTransitions : MonoBehaviour
         MainMenu.SetActive(false);
         Opzioni.SetActive(false);
         Menu.SetActive(false);
-        PauseCanvas.SetActive(false);
         Pause = false;
-        Debug.Log(showButton);
     }
 
     void Update(){
         
         if(showButton.action.WasPressedThisFrame()){
             if(!Pause){
-                PauseCanvas.SetActive(true);
                 MainMenu.SetActive(true);
-                PauseCanvas.transform.position = head.position + new Vector3 (head.forward.x, 0, head.forward.z).normalized * spawnDistance;
+                
+                //MainMenu
+                MainMenu.transform.position = head.position + new Vector3 (head.forward.x, 0, head.forward.z).normalized * spawnDistance;
+                MainMenu.transform.LookAt(new Vector3(head.position.x, MainMenu.transform.position.y, head.position.z));
+                MainMenu.transform.forward *= -1;
+
+                //Opzioni
+                Opzioni.transform.position = head.position + new Vector3 (head.forward.x, 0, head.forward.z).normalized * spawnDistance;
+                Opzioni.transform.LookAt(new Vector3(head.position.x, Opzioni.transform.position.y, head.position.z));
+                Opzioni.transform.forward *= -1;
+
+                //Menu
+                Menu.transform.position = head.position + new Vector3 (head.forward.x, 0, head.forward.z).normalized * spawnDistance;
+                Menu.transform.LookAt(new Vector3(head.position.x, Menu.transform.position.y, head.position.z));
+                Menu.transform.forward *= -1;
+
                 // Time.timeScale = 0; disattiva il movimento giocatore e ferma il tempo
                 Time.timeScale = 0;
                 Pause = true;
@@ -44,8 +55,7 @@ public class UI_PauseTransitions : MonoBehaviour
     }
 
     public void UI_resume(){
-        MainMenu.SetActive(false);
-        PauseCanvas.SetActive(false);        
+        MainMenu.SetActive(false);        
         // Time.timeScale = 1; riattiva movimento e tempo;
         Time.timeScale = 1;
         Pause = false;

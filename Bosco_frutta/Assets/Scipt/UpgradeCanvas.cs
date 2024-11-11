@@ -163,4 +163,24 @@ public class UpgradeCanvas : MonoBehaviour
             ChangeSpawnTexts();
         }
     }
+
+    public void ResetGame() {
+        //reset player Prefs
+        PlayerPrefs.SetInt("Speed", 0);
+        PlayerPrefs.SetInt("MolScore", 0);
+        PlayerPrefs.SetInt("SpawnRate", 0);
+        PlayerPrefs.SetFloat("TotPoints", 0);
+        
+        //change stats and points
+        Speed.Lv = PlayerPrefs.GetInt("Speed");
+        MolScore.Lv = PlayerPrefs.GetInt("MolScore");
+        SpawnRate.Lv = PlayerPrefs.GetInt("SpawnRate");
+        playerInst.TotalPoints = PlayerPrefs.GetFloat("TotPoints");
+
+        //change texts
+        ChangeSpeTexts();
+        ChangeMolTexts();
+        ChangeSpawnTexts();
+        txtTotPoints.text = playerInst.TotalPoints.ToString();
+    }
 }

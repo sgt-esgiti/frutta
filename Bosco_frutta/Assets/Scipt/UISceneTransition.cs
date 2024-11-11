@@ -50,9 +50,9 @@ public class UISceneTransition : MonoBehaviour
         Opzioni.SetActive(false);
         GameEsc.SetActive(false);
     }
+    
+    public void GameReset(){
 
-    public void UI_Quit(){
-        Application.Quit();
     }
 
     public void HideAll(){

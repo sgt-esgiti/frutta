@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5800083749580642954}
   - component: {fileID: 7954512320870253770}
   - component: {fileID: 7930042700785403949}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Arancia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4243a81d0eed02419e9e10fea22ef8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  posSpawn: 0
 --- !u!135 &5800083749580642954
 SphereCollider:
   m_ObjectHideFlags: 0

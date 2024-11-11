@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7968702071557000436}
   - component: {fileID: 2768510434054497185}
   - component: {fileID: 6680708604368885585}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Fico
   m_TagString: Untagged
   m_Icon: {fileID: 0}
