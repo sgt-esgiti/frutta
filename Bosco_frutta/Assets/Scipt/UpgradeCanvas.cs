@@ -98,7 +98,7 @@ public class UpgradeCanvas : MonoBehaviour
         if (Speed.Lv!=5){
             txtSpeLv.text = Speed.Lv.ToString();
             txtSpeValue.text = Speed.livello[Speed.Lv].Value.ToString();
-            txtSpeCost.text = Speed.livello[Speed.Lv+1].Cost.ToString() + " points";;
+            txtSpeCost.text = Speed.livello[Speed.Lv+1].Cost.ToString() + " points";
         }
         else {
             txtSpeLv.text = "MAX";
@@ -111,7 +111,7 @@ public class UpgradeCanvas : MonoBehaviour
         if (MolScore.Lv != 5){
             txtMolLv.text = MolScore.Lv.ToString();
             txtMolValue.text = MolScore.livello[MolScore.Lv].Value.ToString();
-            txtMolCost.text = MolScore.livello[MolScore.Lv+1].Cost.ToString() + " points";;
+            txtMolCost.text = MolScore.livello[MolScore.Lv+1].Cost.ToString() + " points";
         }
         else {
             txtMolLv.text = "MAX";
