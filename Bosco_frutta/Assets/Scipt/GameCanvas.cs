@@ -22,6 +22,8 @@ public class GameCanvas : MonoBehaviour
         CanvasGamePoints = playerInst.GamePoints;
         txtGamePoints.text = CanvasGamePoints.ToString("0");
         TimerOn = true;
+        AudioManager.instance.Play("Forest_ambient");
+        AudioManager.instance.Play("Forest_BG");
     }
 
     // Update is called once per frame
@@ -44,6 +46,8 @@ public class GameCanvas : MonoBehaviour
                 
                 //cambia scena e aggiorna punti totali player
                 playerInst.AddPointsFinal();
+                AudioManager.instance.Stop("Forest_ambient");
+                AudioManager.instance.Stop("Forest_BG");
                 SceneManager.LoadScene("Stanza");
             }
         }

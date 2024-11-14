@@ -18,8 +18,8 @@ public class SpawnerFruits : MonoBehaviour
         spawnPoints = GameSingleton.instance.listSpawnPoints; // copy of spawn point list
         listFruits = FruitList.GetComponent<ObjectPool>().listfruits; // copy of fruits list
         spawn = false;
-        //spawn 15 frutti
-        for (int i = 0; i<15; i++){
+        //spawn 25 frutti
+        for (int i = 0; i<25; i++){
             SpawnFruit();
         }
     }

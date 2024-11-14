@@ -24,8 +24,8 @@ public class UpgradeCanvas : MonoBehaviour
     
     //creation of Speed, MolScore and SpawnRate array of levels
     private Level[] speedLevels = {
-        new Level(0,1.5f),
-        new Level(25,2),
+        new Level(0,2),
+        new Level(25,2.5f),
         new Level(100,3),
         new Level(250,4),
         new Level(500,5),
@@ -78,9 +78,10 @@ public class UpgradeCanvas : MonoBehaviour
             //set and create
             PlayerPrefs.SetInt("Speed", 0);
             PlayerPrefs.SetInt("MolScore", 0);
-            PlayerPrefs.SetInt("SpawnRate", 0);
-            PlayerPrefs.SetFloat("TotPoints", 0);
+            PlayerPrefs.SetInt("SpawnRate", 0);           
         }
+
+        Debug.Log("punti totali: " + playerInst.TotalPoints);
 
         //change text when game start
         ChangeSpeTexts();
@@ -140,6 +141,7 @@ public class UpgradeCanvas : MonoBehaviour
             Speed.Lv++;
             playerInst.MovementSpeed = Speed.livello[Speed.Lv].Value;
             PlayerPrefs.SetInt("Speed", Speed.Lv);
+            PlayerPrefs.SetFloat("TotPoints", playerInst.TotalPoints);
             ChangeSpeTexts();
         }
     }
@@ -150,6 +152,7 @@ public class UpgradeCanvas : MonoBehaviour
             MolScore.Lv++;
             playerInst.PointsMultiplier = MolScore.livello[MolScore.Lv].Value;
             PlayerPrefs.SetInt("MolScore", MolScore.Lv);
+            PlayerPrefs.SetFloat("TotPoints", playerInst.TotalPoints);
             ChangeMolTexts();
         }
     }
@@ -160,6 +163,7 @@ public class UpgradeCanvas : MonoBehaviour
             SpawnRate.Lv++;
             GameSingleton.instance.SpawnRateSeconds = SpawnRate.livello[SpawnRate.Lv].Value;
             PlayerPrefs.SetInt("SpawnRate", SpawnRate.Lv);
+            PlayerPrefs.SetFloat("TotPoints", playerInst.TotalPoints);
             ChangeSpawnTexts();
         }
     }

@@ -6282,7 +6282,7 @@ GameObject:
   - component: {fileID: 238530252}
   - component: {fileID: 238530253}
   m_Layer: 5
-  m_Name: Slider_musica
+  m_Name: Slider_effetti
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6353,13 +6353,25 @@ MonoBehaviour:
   m_FillRect: {fileID: 0}
   m_HandleRect: {fileID: 1648429147}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.0001
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1865231159}
+        m_TargetAssemblyTypeName: VolumeSettings, Assembly-CSharp
+        m_MethodName: SetSFXVolume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &238813505 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3405915975901006021, guid: 59a3797f3b7e673419747b64d590ee73, type: 3}
@@ -8055,7 +8067,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &560264889
 RectTransform:
   m_ObjectHideFlags: 0
@@ -43634,7 +43646,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &879466182
 RectTransform:
   m_ObjectHideFlags: 0
@@ -44791,7 +44803,7 @@ GameObject:
   - component: {fileID: 1054185585}
   - component: {fileID: 1054185586}
   m_Layer: 5
-  m_Name: Slider_effetti
+  m_Name: Slider_musica
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44862,13 +44874,25 @@ MonoBehaviour:
   m_FillRect: {fileID: 0}
   m_HandleRect: {fileID: 1903540160}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.0001
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1865231159}
+        m_TargetAssemblyTypeName: VolumeSettings, Assembly-CSharp
+        m_MethodName: SetMusicVolume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1057074389 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9050824916289506958, guid: 9e233e4f89ad60b448af75ab01971d54, type: 3}
@@ -72352,7 +72376,7 @@ RectTransform:
   m_Father: {fileID: 961443484}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -102606,6 +102630,7 @@ GameObject:
   - component: {fileID: 1865231157}
   - component: {fileID: 1865231156}
   - component: {fileID: 1865231155}
+  - component: {fileID: 1865231159}
   m_Layer: 5
   m_Name: Canvas_Pause
   m_TagString: Untagged
@@ -102700,6 +102725,21 @@ RectTransform:
   m_AnchoredPosition: {x: 57, y: 2.1503}
   m_SizeDelta: {x: 7, y: 3}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1865231159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865231154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3701b3ba823629446b6458006859642d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myMixer: {fileID: 24100000, guid: d395161a04972114fbc4bc11ab74af33, type: 2}
+  musicSlider: {fileID: 1054185586}
+  SFXSlider: {fileID: 238530253}
 --- !u!1001 &1892226161
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -102850,7 +102890,7 @@ RectTransform:
   m_Father: {fileID: 1906658880}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
