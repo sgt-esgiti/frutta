@@ -13,8 +13,8 @@ Puoi migliorare queste 3 caratteristiche fino al livello 5.
 E scopri tutti i segreti della casetta👀 - E.M.
 
 ### COMANDI
-![Right controls](https://github.com/sgt-esgiti/frutta/controlsRight.png?raw=true)
-![Left controls](https://github.com/sgt-esgiti/frutta/controlsLeft.png?raw=true)
+![Right controls](https://github.com/sgt-esgiti/frutta/blob/main/controlsLeft.svg?raw=true)
+![Right controls](https://github.com/sgt-esgiti/frutta/blob/main/controlsRight.svg?raw=true)
 - TRIGGERS: Selezione/conferma nei menu
 - GRIP: Per prendere gli oggetti (e quindi la frutta)
 - TRIGGER Sx: Apre il menu di pausa (Solo quando si è nella foresta)
