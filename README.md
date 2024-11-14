@@ -1,6 +1,6 @@
 # Fruit Forest
 
-### COS'É IL GIOCO
+### COS'È IL GIOCO
 Ciao e benvenutə in Fruit Forest!
 In questa rilassante avventura in VR dovrai raccogliere quanta più frutta possibile, per guadagnare punti e spenderli in potenziamenti che ti permetteranno di raccogliere ancora più frutta.
 Rilassante sì, ma occhio al tempo! Avrai solo 2 minuti prima di dover rientrare a casa.
