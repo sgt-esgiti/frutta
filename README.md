@@ -20,3 +20,14 @@ E scopri tutti i segreti della casetta👀 - E.M.
 - TRIGGERS: Selezione/conferma nei menu
 - GRIP: Per prendere gli oggetti (e quindi la frutta)
 - TRIGGER Sx: Apre il menu di pausa (Solo quando si è nella foresta)
+
+### Development Team
+Un gioco di High Squirrel Games™
+
+Sabrina Albanese
+Alessandra Cardetti
+Stefano Gallo
+Eleonora Marras
+Tanja Prini
+
+Musiche e effetti sonori di [zapzplat](https://zapsplat.com) e [pixabay](https://pixabay.com)
