@@ -12,5 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Bosco.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 652cd71acf874dd439319a4655a3d921, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 5f247fa6432aec143aa4a77b3ea35c66, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 7ae1f8e7291d8bc468449fb90dab2edd, type: 2}
