@@ -21,11 +21,15 @@ public class UISceneTransition : MonoBehaviour
         Crediti.SetActive(false);
         Opzioni.SetActive(false);
         GameEsc.SetActive(false);
+        AudioManager.instance.Play("Cabin_Bg");
+        AudioManager.instance.Play("fireplace");
     }
 
     //public void nomeMetodo() -> andrà poi assegnato al pulsante di riferimento
     public void UI_Start(){
         HideAll();
+        AudioManager.instance.Stop("Cabin_Bg");
+        AudioManager.instance.Stop("fireplace");
         SceneManager.LoadScene("Bosco");
     }
 
