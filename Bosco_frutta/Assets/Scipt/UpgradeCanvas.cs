@@ -81,8 +81,6 @@ public class UpgradeCanvas : MonoBehaviour
             PlayerPrefs.SetInt("SpawnRate", 0);           
         }
 
-        Debug.Log("punti totali: " + playerInst.TotalPoints);
-
         //change text when game start
         ChangeSpeTexts();
         ChangeMolTexts();

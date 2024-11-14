@@ -4,7 +4,7 @@ using System.IO;
 
 public class SpawnGameObject : MonoBehaviour
 {
-    
+    public static SpawnGameObject instance;   
 
     // Nome del file JSON da caricare
     public string jsonFileName = "spawnPoints.json";
@@ -12,8 +12,6 @@ public class SpawnGameObject : MonoBehaviour
     void Start()
     {
         LoadGameObjectsFromJson();
-
-
     }
 
     void LoadGameObjectsFromJson()
