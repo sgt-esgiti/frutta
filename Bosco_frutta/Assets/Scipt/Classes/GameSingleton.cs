@@ -17,7 +17,14 @@ public class GameSingleton:MonoBehaviour {
             Destroy(gameObject);
         }
 
-        player = new Player();
+        if(PlayerPrefs.HasKey("TotPoints")){           
+            player = new Player(PlayerPrefs.GetFloat("TotPoints"));
+        }
+        else {
+            PlayerPrefs.SetFloat("TotPoints", 0f);
+            player = new Player();
+        }
+        
         SpawnRateSeconds = 0;
         listSpawnPoints = new List<GameObject>();
     }

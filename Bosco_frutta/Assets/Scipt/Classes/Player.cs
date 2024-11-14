@@ -1,3 +1,5 @@
+using UnityEngine;
+
 public class Player
 {
     // CONSTRUCTORS
@@ -5,7 +7,7 @@ public class Player
     {
         MovementSpeed = 1;
         GamePoints = 0;
-        TotalPoints = 0;
+        TotalPoints = 2;
         PointsMultiplier = 1;
     }
     public Player(float points)
@@ -80,6 +82,7 @@ public class Player
     //metodo per aggiungere punti alla fine di una partita di gioco
     public void AddPointsFinal() {
         TotalPoints += GamePoints;
+        PlayerPrefs.SetFloat("TotPoints", TotalPoints);
     }
 
     public void AddGamePoints(float value){

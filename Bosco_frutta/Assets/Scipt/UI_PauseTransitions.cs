@@ -81,6 +81,8 @@ public class UI_PauseTransitions : MonoBehaviour
     public void UI_ReturnMenu(){
         HideAll();
         Time.timeScale = 1;
+        AudioManager.instance.Stop("Forest_ambient");
+        AudioManager.instance.Stop("Forest_BG");
         SceneManager.LoadScene("Stanza");
     }
 
