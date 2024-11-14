@@ -24,10 +24,6 @@ E scopri tutti i segreti della casetta👀 - E.M.
 ### Development Team
 Un gioco di High Squirrel Games™
 
-Sabrina Albanese
-Alessandra Cardetti
-Stefano Gallo
-Eleonora Marras
-Tanja Prini
+Sabrina Albanese, Alessandra Cardetti, Stefano Gallo, Eleonora Marras, Tanja Prini
 
 Musiche e effetti sonori di [zapzplat](https://zapsplat.com) e [pixabay](https://pixabay.com)
