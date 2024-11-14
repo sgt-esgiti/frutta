@@ -48,6 +48,7 @@ public class GameCanvas : MonoBehaviour
                 playerInst.AddPointsFinal();
                 AudioManager.instance.Stop("Forest_ambient");
                 AudioManager.instance.Stop("Forest_BG");
+                GameSingleton.instance.listSpawnPoints.Clear();
                 SceneManager.LoadScene("Stanza");
             }
         }
